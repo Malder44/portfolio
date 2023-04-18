@@ -18,7 +18,7 @@
 .curriculo__apresentacao__conteudo {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 3vh;
     width: 75%;
 }
 
@@ -59,7 +59,7 @@
     border-width: 0px 4px;
     border-style: solid;
     border-color: var(--cor-borda-links);
-    gap: 16px;
+    gap: 20px;
 }
 
 .curriculo__experiencia__titulo {
@@ -70,4 +70,80 @@
 .curriculo__experiencia__texto {
     font-family: var(--font-primaria);
     font-size: 2vh;
+}
+
+.curriculo__educacao {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    padding: 2% 2%;
+    background-color: #FFFFFF;
+    border-width: 0px 4px;
+    border-style: solid;
+    border-color: var(--cor-borda-links);
+    gap: 20px;
+}
+
+.curriculo__educacao__titulo {
+    font-family: var(--font-secundaria);
+    font-size: 2.4vh;
+}
+
+.curriculo__educacao__ensino-um {
+    display: flex;
+    justify-content: space-between;
+    font-family: var(--font-primaria);
+    font-size: 2vh;
+}
+
+.educacao__ensino-um__bloco-esquerdo, .educacao__ensino-um__bloco-direito {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 50%;
+}
+
+.ensino-um__bloco-esquerdo__destaque {
+    font-weight: 600;
+}
+
+.educacao__ensino-um__bloco-direito {
+    box-sizing: border-box;
+    padding: 0 0 0 20px;
+    border-left: 2px solid var(--cor-borda-links);
+}
+
+.curriculo__extracurriculares {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    padding: 2% 2%;
+    background-color: #FFFFFF;
+    border-width: 0px 4px;
+    border-style: solid;
+    border-color: var(--cor-borda-links);
+    gap: 20px;
+}
+
+.curriculo__extracurriculares__titulo {
+    font-family: var(--font-secundaria);
+    font-size: 2.4vh;
+}
+
+.extracurriculares__conteudo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-family: var(--font-primaria);
+    font-size: 2vh;
+}
+
+.extracurriculares__conteudo__links {
+    text-decoration: none;
+    color: var(--cor-texto-principal);
+}
+
+.extracurriculares__conteudo__links:hover {
+    color: var(--cor-fundo-secundaria);
+    font-weight: 600;
 }
