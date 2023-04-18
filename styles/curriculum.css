@@ -1,18 +1,19 @@
 .curriculo {
     padding: 5% 15%;
     color: #2F2F2F;
+    display: flex;
+}
+
+.curriculo__secao-esquerda {
+    width: 70%;
+    border-width: 4px 0 4px 4px;
+    background-color: #FFFFFF;
 }
 
 .curriculo__apresentacao {
-    padding: 3% 2% 2%;
-    width: 70%;
-    border-width: 4px 4px 0 4px;
-    border-style: solid;
-    border-color: var(--cor-borda-links);
     display: flex;
     align-items: center;
     gap: 8%;
-    background-color: #FFFFFF;
 }
 
 .curriculo__apresentacao__conteudo {
@@ -42,58 +43,12 @@
 }
 
 .separa-secao {
-    width: 70%;
-    padding: 0 2%;
-    border-width: 0 4px;
-    border-style: solid;
-    border-color: var(--cor-borda-links);
-    background-color: #FFFFFF;
-}
-
-.curriculo__experiencia {
-    display: flex;
-    flex-direction: column;
-    width: 70%;
-    padding: 2% 2%;
-    background-color: #FFFFFF;
-    border-width: 0px 4px;
-    border-style: solid;
-    border-color: var(--cor-borda-links);
-    gap: 20px;
-}
-
-.curriculo__experiencia__titulo {
-    font-family: var(--font-secundaria);
-    font-size: 2.4vh;
-}
-
-.curriculo__experiencia__texto {
-    font-family: var(--font-primaria);
-    font-size: 2vh;
-}
-
-.curriculo__educacao {
-    display: flex;
-    flex-direction: column;
-    width: 70%;
-    padding: 2% 2%;
-    background-color: #FFFFFF;
-    border-width: 0px 4px;
-    border-style: solid;
-    border-color: var(--cor-borda-links);
-    gap: 20px;
-}
-
-.curriculo__educacao__titulo {
-    font-family: var(--font-secundaria);
-    font-size: 2.4vh;
+    padding: 1% 0;
 }
 
 .curriculo__educacao__ensino-um {
     display: flex;
     justify-content: space-between;
-    font-family: var(--font-primaria);
-    font-size: 2vh;
 }
 
 .educacao__ensino-um__bloco-esquerdo, .educacao__ensino-um__bloco-direito {
@@ -113,29 +68,10 @@
     border-left: 2px solid var(--cor-borda-links);
 }
 
-.curriculo__extracurriculares {
-    display: flex;
-    flex-direction: column;
-    width: 70%;
-    padding: 2% 2%;
-    background-color: #FFFFFF;
-    border-width: 0px 4px;
-    border-style: solid;
-    border-color: var(--cor-borda-links);
-    gap: 20px;
-}
-
-.curriculo__extracurriculares__titulo {
-    font-family: var(--font-secundaria);
-    font-size: 2.4vh;
-}
-
 .extracurriculares__conteudo {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    font-family: var(--font-primaria);
-    font-size: 2vh;
 }
 
 .extracurriculares__conteudo__links {
@@ -146,4 +82,60 @@
 .extracurriculares__conteudo__links:hover {
     color: var(--cor-fundo-secundaria);
     font-weight: 600;
+}
+
+.curriculo__hobbies {
+    gap: 16px;
+}
+
+.curriculo__secao-direita {
+    background-color: teal;
+    width: 30%;
+    border-width: 4px 4px 4px 0;
+}
+
+.curriculo__sobre {
+    gap: 16px;
+}
+
+.curriculo__sobre__topico {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.sobre__topico__links {
+    text-decoration: none;
+    color: #2F2F2F;
+}
+
+.sobre__topico__links:hover {
+    color: goldenrod;
+    font-weight: 600;
+}
+
+.curriculo__secao-esquerda, .curriculo__secao-direita {
+    padding: 3% 2%;
+    border-style: solid;
+    border-color: var(--cor-borda-links);
+}
+
+.curriculo__experiencia, .curriculo__educacao, .curriculo__extracurriculares {
+    gap: 20px;
+}
+
+.curriculo__experiencia, .curriculo__educacao, .curriculo__extracurriculares, .curriculo__hobbies, .curriculo__sobre {
+    display: flex;
+    flex-direction: column;
+    padding: 2% 0;
+}
+
+.curriculo__experiencia__titulo, .curriculo__educacao__titulo, .curriculo__extracurriculares__titulo, .curriculo__hobbies__titulo, .curriculo__sobre__titulo {
+    font-family: var(--font-secundaria);
+    font-size: 2.4vh;
+}
+
+.curriculo__experiencia__texto, .curriculo__educacao, .curriculo__educacao__ensino-um, .extracurriculares__conteudo, .curriculo__hobbies__texto, .curriculo__sobre__topico {
+    font-family: var(--font-primaria);
+    font-size: 2vh;
 }
