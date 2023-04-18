@@ -1,0 +1,73 @@
+.curriculo {
+    padding: 5% 15%;
+    color: #2F2F2F;
+}
+
+.curriculo__apresentacao {
+    padding: 3% 2% 2%;
+    width: 70%;
+    border-width: 4px 4px 0 4px;
+    border-style: solid;
+    border-color: var(--cor-borda-links);
+    display: flex;
+    align-items: center;
+    gap: 8%;
+    background-color: #FFFFFF;
+}
+
+.curriculo__apresentacao__conteudo {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 75%;
+}
+
+.apresentacao__titulo {
+    font-family: var(--font-secundaria);
+    font-size: 3vh;
+}
+
+.apresentacao__subtitulo {
+    font-family: var(--font-secundaria);
+    font-size: 2.4vh;
+}
+
+.apresentacao__texto {
+    font-family: var(--font-primaria);
+    font-size: 2vh;
+}
+
+.apresentacao__imagem {
+    border-radius: 8px;
+}
+
+.separa-secao {
+    width: 70%;
+    padding: 0 2%;
+    border-width: 0 4px;
+    border-style: solid;
+    border-color: var(--cor-borda-links);
+    background-color: #FFFFFF;
+}
+
+.curriculo__experiencia {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    padding: 2% 2%;
+    background-color: #FFFFFF;
+    border-width: 0px 4px;
+    border-style: solid;
+    border-color: var(--cor-borda-links);
+    gap: 16px;
+}
+
+.curriculo__experiencia__titulo {
+    font-family: var(--font-secundaria);
+    font-size: 2.4vh;
+}
+
+.curriculo__experiencia__texto {
+    font-family: var(--font-primaria);
+    font-size: 2vh;
+}
