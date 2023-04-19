@@ -1,10 +1,18 @@
+/*
+TODO: 
+Criar as divs e fazer o espaçamento interno das seções;
+Colocar os gaps como responsivos;
+Otimizar o código;
+Separar os css's;
+*/
+
 .curriculo {
     padding: 5% 15%;
-    color: #2F2F2F;
     display: flex;
 }
 
 .curriculo__secao-esquerda {
+    color: #2F2F2F;
     width: 70%;
     border-width: 4px 0 4px 4px;
     background-color: #FFFFFF;
@@ -14,6 +22,7 @@
     display: flex;
     align-items: center;
     gap: 8%;
+    padding-bottom: 2vh;
 }
 
 .curriculo__apresentacao__conteudo {
@@ -24,6 +33,7 @@
 }
 
 .apresentacao__titulo {
+    color: #000000;
     font-family: var(--font-secundaria);
     font-size: 3vh;
 }
@@ -39,11 +49,18 @@
 }
 
 .apresentacao__imagem {
-    border-radius: 8px;
+    border-radius: 160px;
 }
 
 .separa-secao {
-    padding: 1% 0;
+    margin: 1vh 0;
+    border-width: 0;
+    height: 1px;
+    background-color: #00000048;
+}
+
+.curriculo__experiencia__texto {
+    width: 70%;
 }
 
 .curriculo__educacao__ensino-um {
@@ -59,6 +76,7 @@
 }
 
 .ensino-um__bloco-esquerdo__destaque {
+    color: #000000;
     font-weight: 600;
 }
 
@@ -71,31 +89,33 @@
 .extracurriculares__conteudo {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 7px;
 }
 
 .extracurriculares__conteudo__links {
     text-decoration: none;
-    color: var(--cor-texto-principal);
+    color: #003399;
+    /*color: var(--cor-texto-principal);*/
 }
 
 .extracurriculares__conteudo__links:hover {
-    color: var(--cor-fundo-secundaria);
+    /*color: var(--cor-fundo-secundaria);*/
+    color: goldenrod;
     font-weight: 600;
 }
 
-.curriculo__hobbies {
-    gap: 16px;
-}
-
 .curriculo__secao-direita {
+    color: #202020;
     background-color: teal;
     width: 30%;
     border-width: 4px 4px 4px 0;
 }
 
 .curriculo__sobre {
+    display: flex;
+    flex-direction: column;
     gap: 16px;
+    padding-bottom: 2vh;
 }
 
 .curriculo__sobre__topico {
@@ -106,11 +126,43 @@
 
 .sobre__topico__links {
     text-decoration: none;
-    color: #2F2F2F;
+    /*color: #CFCFCF;*/
+    color: #003399;
 }
 
 .sobre__topico__links:hover {
     color: goldenrod;
+    font-weight: 600;
+}
+
+.curriculo__habilidades {
+    gap: 16px;
+}
+
+.curriculo__habilidades__lista {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    list-style-position: inside;
+}
+
+.habilidades__lista__topico {
+    position: relative;
+    left: -4px;
+}
+
+.curriculo__idiomas {
+    gap: 16px;
+}
+
+.curriculo__idiomas__topico {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.curriculo__idiomas__topico > :first-child {
+    color: #101010;
     font-weight: 600;
 }
 
@@ -120,22 +172,30 @@
     border-color: var(--cor-borda-links);
 }
 
-.curriculo__experiencia, .curriculo__educacao, .curriculo__extracurriculares {
+.apresentacao__texto, .curriculo__experiencia__texto, .curriculo__educacao__ensino-um {
+    padding-left: 1vh;
+}
+
+.curriculo__experiencia, .curriculo__educacao, .curriculo__extracurriculares, .curriculo__hobbies {
     gap: 20px;
 }
 
-.curriculo__experiencia, .curriculo__educacao, .curriculo__extracurriculares, .curriculo__hobbies, .curriculo__sobre {
+.curriculo__experiencia, .curriculo__educacao, .curriculo__extracurriculares, .curriculo__hobbies, .curriculo__habilidades, .curriculo__idiomas {
     display: flex;
     flex-direction: column;
-    padding: 2% 0;
+    padding: 2vh 0;
 }
 
-.curriculo__experiencia__titulo, .curriculo__educacao__titulo, .curriculo__extracurriculares__titulo, .curriculo__hobbies__titulo, .curriculo__sobre__titulo {
+.curriculo__experiencia__titulo, .curriculo__educacao__titulo, .curriculo__extracurriculares__titulo, .curriculo__hobbies__titulo, .curriculo__sobre__titulo, .curriculo__habilidades__titulo, .curriculo__idiomas__titulo {
     font-family: var(--font-secundaria);
     font-size: 2.4vh;
 }
 
-.curriculo__experiencia__texto, .curriculo__educacao, .curriculo__educacao__ensino-um, .extracurriculares__conteudo, .curriculo__hobbies__texto, .curriculo__sobre__topico {
+.curriculo__experiencia__texto, .curriculo__educacao, .curriculo__educacao__ensino-um, .extracurriculares__conteudo, .curriculo__hobbies__texto, .curriculo__sobre__topico, .curriculo__habilidades__lista, .curriculo__idiomas__topico {
     font-family: var(--font-primaria);
     font-size: 2vh;
+}
+
+.extracurriculares__conteudo, .curriculo__hobbies__texto {
+    padding-left: 4vh;
 }
