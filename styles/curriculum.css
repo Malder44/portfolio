@@ -1,7 +1,5 @@
 /*
 TODO: 
-Criar as divs e fazer o espaçamento interno das seções;
-Colocar os gaps como responsivos;
 Otimizar o código;
 Separar os css's;
 */
@@ -21,7 +19,7 @@ Separar os css's;
 .curriculo__apresentacao {
     display: flex;
     align-items: center;
-    gap: 8%;
+    gap: 1vh;
     padding-bottom: 2vh;
 }
 
@@ -71,7 +69,7 @@ Separar os css's;
 .educacao__ensino-um__bloco-esquerdo, .educacao__ensino-um__bloco-direito {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 1vh;
     width: 50%;
 }
 
@@ -82,14 +80,14 @@ Separar os css's;
 
 .educacao__ensino-um__bloco-direito {
     box-sizing: border-box;
-    padding: 0 0 0 20px;
+    padding-left: 20px;
     border-left: 2px solid var(--cor-borda-links);
 }
 
 .extracurriculares__conteudo {
     display: flex;
     flex-direction: column;
-    gap: 7px;
+    gap: 0.7vh;
 }
 
 .extracurriculares__conteudo__links {
@@ -114,14 +112,14 @@ Separar os css's;
 .curriculo__sobre {
     display: flex;
     flex-direction: column;
-    gap: 16px;
-    padding-bottom: 2vh;
+    gap: 2vh;
+    padding-bottom: 2.5vh;
 }
 
 .curriculo__sobre__topico {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 1.3vh;
 }
 
 .sobre__topico__links {
@@ -136,29 +134,29 @@ Separar os css's;
 }
 
 .curriculo__habilidades {
-    gap: 16px;
+    gap: 2.5vh;
 }
 
 .curriculo__habilidades__lista {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 1.8vh;
     list-style-position: inside;
 }
 
 .habilidades__lista__topico {
     position: relative;
-    left: -4px;
+    left: -0.7vh;
 }
 
 .curriculo__idiomas {
-    gap: 16px;
+    gap: 2.5vh;
 }
 
 .curriculo__idiomas__topico {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 0.7vh;
 }
 
 .curriculo__idiomas__topico > :first-child {
@@ -177,7 +175,7 @@ Separar os css's;
 }
 
 .curriculo__experiencia, .curriculo__educacao, .curriculo__extracurriculares, .curriculo__hobbies {
-    gap: 20px;
+    gap: 2.5vh;
 }
 
 .curriculo__experiencia, .curriculo__educacao, .curriculo__extracurriculares, .curriculo__hobbies, .curriculo__habilidades, .curriculo__idiomas {
