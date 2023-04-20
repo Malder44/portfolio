@@ -50,6 +50,6 @@ body {
 .cabecalho__menu__link,
 .rodape {
     font-family: var(--font-texto);
-    font-size: 2.5vh;
+    font-size: 1.5rem;
     color: var(--cor-texto-secundario);
 }

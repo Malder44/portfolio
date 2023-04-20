@@ -36,17 +36,17 @@
 .apresentacao__titulo {
     color: #000000;
     font-family: var(--font-titulo);
-    font-size: 3vh;
+    font-size: 1.8rem;
 }
 
 .apresentacao__subtitulo {
     font-family: var(--font-titulo);
-    font-size: 2.4vh;
+    font-size: 1.4rem;
 }
 
 .apresentacao__texto {
     font-family: var(--font-texto);
-    font-size: 2vh;
+    font-size: 1.2rem;
 }
 
 .apresentacao__imagem {
@@ -198,7 +198,7 @@
 .curriculo__habilidades__titulo, 
 .curriculo__idiomas__titulo {
     font-family: var(--font-titulo);
-    font-size: 2.4vh;
+    font-size: 1.4rem;
 }
 
 .curriculo__experiencia__texto, 
@@ -210,7 +210,7 @@
 .curriculo__habilidades__lista, 
 .curriculo__idiomas__topico {
     font-family: var(--font-texto);
-    font-size: 2vh;
+    font-size: 1.2rem;
 }
 
 .extracurriculares__conteudo, 
