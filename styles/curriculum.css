@@ -1,3 +1,7 @@
+/*
+TODO: melhorar a seção educação
+*/
+
 :root {
     --cor-texto-curriculo-esquerda: #2F2F2F;
     --cor-texto-curriculo-direita: #202020;
@@ -10,6 +14,7 @@
 .curriculo {
     padding: 10vh 30vh;
     display: flex;
+    box-sizing: border-box;
 }
 
 .curriculo__secao-esquerda {
@@ -50,6 +55,7 @@
 }
 
 .apresentacao__imagem {
+    width: 25%;
     border-radius: 160px;
 }
 
