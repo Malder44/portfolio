@@ -88,6 +88,10 @@ TODO: melhorar a seção educação
     font-weight: 600;
 }
 
+.educacao__ensino-um__bloco-esquerdo {
+    padding-right: 20px;
+}
+
 .educacao__ensino-um__bloco-direito {
     box-sizing: border-box;
     padding-left: 20px;
@@ -164,9 +168,10 @@ TODO: melhorar a seção educação
 
 .curriculo__secao-esquerda, 
 .curriculo__secao-direita {
-    padding: 3% 2%;
+    padding: 3vh;
     border-style: solid;
     border-color: var(--cor-borda);
+    box-sizing: border-box;
 }
 
 .apresentacao__texto, 
@@ -222,4 +227,178 @@ TODO: melhorar a seção educação
 .extracurriculares__conteudo, 
 .curriculo__hobbies__texto {
     padding-left: 4vh;
+}
+
+@media (max-width: 1400px) {
+    .cabecalho {
+        padding: 8vh 15vh;
+    }
+
+    .curriculo {
+        padding: 10vh 15vh;
+    }
+
+    .rodape {
+        padding: 3vh 15vh;
+    }
+}
+
+@media (max-width: 1200px) {
+    .cabecalho__menu {
+        justify-content: left;
+    }
+
+    .curriculo {
+        flex-direction: column;
+    }
+
+    .curriculo__secao-esquerda {
+        border-width: 4px 4px 0 4px;
+    }
+
+    .curriculo__secao-direita {
+        border-width: 0 4px 4px 4px;
+    }
+
+    .curriculo__secao-esquerda,
+    .curriculo__secao-direita {
+        width: 100%;
+    }
+
+    .curriculo__sobre__topico,
+    .curriculo__habilidades__lista,
+    .curriculo__idiomas__topico {
+        padding-left: 1vh;
+    }
+}
+
+@media (max-width: 1000px) {
+    .cabecalho {
+        padding: 10vh;
+    }
+
+    .curriculo {
+        padding: 10vh;
+    }
+
+    .curriculo__secao-esquerda,
+    .curriculo__secao-direita {
+        padding: 5vh;
+    }
+
+    .rodape {
+        padding: 3vh 10vh;
+    }
+}
+
+@media (max-width: 800px) {
+    .cabecalho__menu {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .curriculo {
+        text-align: center;
+    }
+
+    .curriculo__apresentacao {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .curriculo__apresentacao__conteudo {
+        width: 100%;
+    }
+
+    .apresentacao__imagem {
+        width: auto;
+    }
+
+    .educacao__ensino-um__bloco-esquerdo, 
+    .educacao__ensino-um__bloco-direito {
+        justify-content: space-around;
+    }
+
+    .curriculo__experiencia__texto {
+        width: 100%;
+    }
+
+    .apresentacao__texto, 
+    .curriculo__experiencia__texto, 
+    .curriculo__educacao__ensino-um,
+    .extracurriculares__conteudo, 
+    .curriculo__hobbies__texto,
+    .curriculo__sobre__topico,
+    .curriculo__habilidades__lista,
+    .curriculo__idiomas__topico {
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .cabecalho {
+        padding: 3vh;
+    }
+
+    .curriculo {
+        padding: 3vh;
+    }
+
+    .curriculo__apresentacao,
+    .curriculo__sobre {
+        padding: 2vh 0;
+    }
+    
+    .apresentacao__titulo {
+        font-size: 1.2rem;
+    }
+    
+    .apresentacao__subtitulo {
+        font-size: 1rem;
+    }
+    
+    .apresentacao__texto {
+        font-size: 0.9rem;
+    }
+
+    .apresentacao__imagem {
+        width: 40%;
+    }
+
+    .curriculo__secao-esquerda,
+    .curriculo__secao-direita {
+       padding: 3vh; 
+    }
+    
+    .curriculo__experiencia__titulo, 
+    .curriculo__educacao__titulo, 
+    .curriculo__extracurriculares__titulo, 
+    .curriculo__hobbies__titulo, 
+    .curriculo__sobre__titulo, 
+    .curriculo__habilidades__titulo, 
+    .curriculo__idiomas__titulo {
+        font-size: 1rem;
+    }
+
+    .curriculo__experiencia__texto, 
+    .curriculo__educacao, 
+    .curriculo__educacao__ensino-um, 
+    .extracurriculares__conteudo, 
+    .curriculo__hobbies__texto, 
+    .curriculo__sobre__topico, 
+    .curriculo__habilidades__lista, 
+    .curriculo__idiomas__topico {
+        font-size: 0.9rem;
+    }
+
+    .rodape {
+        padding: 3vh;
+    }
+}
+
+@media (max-width: 400px) {
+    .curriculo__secao-esquerda,
+    .curriculo__secao-direita {
+       padding: 1.5vh; 
+    }
 }
