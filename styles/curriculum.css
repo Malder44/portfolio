@@ -81,6 +81,7 @@ TODO: melhorar a seção educação
     flex-direction: column;
     gap: 1vh;
     width: 50%;
+    box-sizing: border-box;
 }
 
 .ensino-um__bloco-esquerdo__destaque {
@@ -93,7 +94,6 @@ TODO: melhorar a seção educação
 }
 
 .educacao__ensino-um__bloco-direito {
-    box-sizing: border-box;
     padding-left: 20px;
     border-left: 2px solid var(--cor-borda);
 }
