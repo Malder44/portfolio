@@ -1,4 +1,4 @@
-# **Portfolio de Leonorico Borges**
+# Portfolio de Leonorico Borges
 ## *Projeto de portfolio desenvolvido com os cursos de HTML e CSS da Alura*
 
 Este projeto é um portfolio de Leonorico Borges, inicialmente desenvolvido com o apoio dos cursos de HTML e CSS da Alura, e, em sequência, melhorado pelo autor. Você pode visitá-lo e analisá-lo por meio [deste link](https://portfolio-leonorico-borges.vercel.app/).
