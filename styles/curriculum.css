@@ -13,7 +13,7 @@
     box-sizing: border-box;
 }
 
-.curriculo__box-esquerdo {
+.curriculo > .box-esquerdo {
     color: var(--cor-texto-curriculo-esquerda);
     width: 70%;
     border-width: 4px 0 4px 4px;
@@ -34,23 +34,23 @@
     width: 75%;
 }
 
-.apresentacao__conteudo__titulo {
+.curriculo__apresentacao__titulo {
     color: #000000;
     font-family: var(--font-titulo);
     font-size: 1.8rem;
 }
 
-.apresentacao__conteudo__subtitulo {
+.curriculo__apresentacao__subtitulo {
     font-family: var(--font-titulo);
     font-size: 1.4rem;
 }
 
-.apresentacao__conteudo__texto {
+.curriculo__apresentacao__texto {
     font-family: var(--font-texto);
     font-size: 1.2rem;
 }
 
-.apresentacao__imagem {
+.curriculo__apresentacao__imagem {
     width: 25%;
     border-radius: 160px;
 }
@@ -71,16 +71,16 @@
     justify-content: space-between;
 }
 
-.educacao__ensino-um__box-esquerdo {
+.curriculo__educacao__ensino-um > .box-esquerdo {
     padding-right: 20px;
 }
 
-.ensino-um__box-esquerdo__destaque {
+.educacao__ensino-um__destaque {
     color: #000000;
     font-weight: 600;
 }
 
-.educacao__ensino-um__box-direito {
+.curriculo__educacao__ensino-um > .box-direito {
     padding-left: 20px;
     border-left: 2px solid var(--cor-borda);
 }
@@ -101,7 +101,7 @@
     font-weight: 600;
 }
 
-.curriculo__box-direito {
+.curriculo > .box-direito {
     color: var(--cor-texto-curriculo-direita);
     background-color: var(--cor-fundo-curriculo-direita);
     width: 30%;
@@ -154,16 +154,16 @@
     font-weight: 600;
 }
 
-.curriculo__box-esquerdo, 
-.curriculo__box-direito {
+.curriculo > .box-esquerdo, 
+.curriculo > .box-direito {
     padding: 3vh;
     border-style: solid;
     border-color: var(--cor-borda);
     box-sizing: border-box;
 }
 
-.educacao__ensino-um__box-esquerdo, 
-.educacao__ensino-um__box-direito {
+.curriculo__educacao__ensino-um > .box-esquerdo, 
+.curriculo__educacao__ensino-um > .box-direito {
     display: flex;
     flex-direction: column;
     gap: 1vh;
@@ -171,7 +171,7 @@
     box-sizing: border-box;
 }
 
-.apresentacao__conteudo__texto, 
+.curriculo__apresentacao__texto, 
 .curriculo__experiencia__texto, 
 .curriculo__educacao__ensino-um {
     padding-left: 1vh;
@@ -240,16 +240,16 @@
         flex-direction: column;
     }
 
-    .curriculo__box-esquerdo {
+    .curriculo > .box-esquerdo {
         border-width: 4px 4px 0 4px;
     }
 
-    .curriculo__box-direito {
+    .curriculo > .box-direito {
         border-width: 0 4px 4px 4px;
     }
 
-    .curriculo__box-esquerdo,
-    .curriculo__box-direito {
+    .curriculo > .box-esquerdo,
+    .curriculo > .box-direito {
         width: 100%;
     }
 
@@ -273,8 +273,8 @@
         padding: 3vh 10vh;
     }
 
-    .curriculo__box-esquerdo,
-    .curriculo__box-direito {
+    .curriculo > .box-esquerdo,
+    .curriculo > .box-direito {
         padding: 5vh;
     }
 }
@@ -298,7 +298,7 @@
         width: 100%;
     }
 
-    .apresentacao__imagem {
+    .curriculo__apresentacao__imagem {
         width: auto;
     }
     
@@ -306,12 +306,12 @@
         width: 100%;
     }
 
-    .educacao__ensino-um__box-esquerdo, 
-    .educacao__ensino-um__box-direito {
+    .curriculo__educacao__ensino-um > .box-esquerdo, 
+    .curriculo__educacao__ensino-um > .box-direito {
         justify-content: space-around;
     }
 
-    .apresentacao__conteudo__texto, 
+    .curriculo__apresentacao__texto, 
     .curriculo__experiencia__texto, 
     .curriculo__educacao__ensino-um,
     .curriculo__extracurriculares__topico, 
@@ -332,19 +332,19 @@
         padding: 3vh;
     }
     
-    .apresentacao__conteudo__titulo {
+    .curriculo__apresentacao__titulo {
         font-size: 1.2rem;
     }
     
-    .apresentacao__conteudo__subtitulo {
+    .curriculo__apresentacao__subtitulo {
         font-size: 1rem;
     }
     
-    .apresentacao__conteudo__texto {
+    .curriculo__apresentacao__texto {
         font-size: 0.9rem;
     }
     
-    .apresentacao__imagem {
+    .curriculo__apresentacao__imagem {
         width: 40%;
     }
 
@@ -353,8 +353,8 @@
         padding: 2vh 0;
     }
 
-    .curriculo__box-esquerdo,
-    .curriculo__box-direito {
+    .curriculo > .box-esquerdo,
+    .curriculo > .box-direito {
        padding: 3vh; 
     }
     
@@ -385,8 +385,8 @@
 }
 
 @media (max-width: 400px) {
-    .curriculo__box-esquerdo,
-    .curriculo__box-direito {
+    .curriculo > .box-esquerdo,
+    .curriculo > .box-direito {
        padding: 1.5vh; 
     }
 }
