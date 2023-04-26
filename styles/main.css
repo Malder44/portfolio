@@ -63,14 +63,14 @@ body {
     .cabecalho__menu {
         gap: 14vh;
     }
+    
+    .rodape {
+        padding: 6vh;
+    }
 
     .cabecalho__menu__link,
     .rodape {
         font-size: 3rem;
-    }
-
-    .rodape {
-        padding: 6vh;
     }
 }
 

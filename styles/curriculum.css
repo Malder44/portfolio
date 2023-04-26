@@ -1,7 +1,3 @@
-/*
-TODO: melhorar a seção educação
-*/
-
 :root {
     --cor-texto-curriculo-esquerda: #2F2F2F;
     --cor-texto-curriculo-direita: #202020;
@@ -17,7 +13,7 @@ TODO: melhorar a seção educação
     box-sizing: border-box;
 }
 
-.curriculo__secao-esquerda {
+.curriculo__box-esquerdo {
     color: var(--cor-texto-curriculo-esquerda);
     width: 70%;
     border-width: 4px 0 4px 4px;
@@ -38,18 +34,18 @@ TODO: melhorar a seção educação
     width: 75%;
 }
 
-.apresentacao__titulo {
+.apresentacao__conteudo__titulo {
     color: #000000;
     font-family: var(--font-titulo);
     font-size: 1.8rem;
 }
 
-.apresentacao__subtitulo {
+.apresentacao__conteudo__subtitulo {
     font-family: var(--font-titulo);
     font-size: 1.4rem;
 }
 
-.apresentacao__texto {
+.apresentacao__conteudo__texto {
     font-family: var(--font-texto);
     font-size: 1.2rem;
 }
@@ -75,46 +71,37 @@ TODO: melhorar a seção educação
     justify-content: space-between;
 }
 
-.educacao__ensino-um__bloco-esquerdo, 
-.educacao__ensino-um__bloco-direito {
-    display: flex;
-    flex-direction: column;
-    gap: 1vh;
-    width: 50%;
-    box-sizing: border-box;
+.educacao__ensino-um__box-esquerdo {
+    padding-right: 20px;
 }
 
-.ensino-um__bloco-esquerdo__destaque {
+.ensino-um__box-esquerdo__destaque {
     color: #000000;
     font-weight: 600;
 }
 
-.educacao__ensino-um__bloco-esquerdo {
-    padding-right: 20px;
-}
-
-.educacao__ensino-um__bloco-direito {
+.educacao__ensino-um__box-direito {
     padding-left: 20px;
     border-left: 2px solid var(--cor-borda);
 }
 
-.extracurriculares__conteudo {
+.curriculo__extracurriculares__topico {
     display: flex;
     flex-direction: column;
     gap: 0.7vh;
 }
 
-.extracurriculares__conteudo__links {
+.extracurriculares__topico__links {
     text-decoration: none;
     color: var(--cor-texto-curriculo-links);
 }
 
-.extracurriculares__conteudo__links:hover {
+.extracurriculares__topico__links:hover {
     color: var(--cor-texto-curriculo-links-hover);
     font-weight: 600;
 }
 
-.curriculo__secao-direita {
+.curriculo__box-direito {
     color: var(--cor-texto-curriculo-direita);
     background-color: var(--cor-fundo-curriculo-direita);
     width: 30%;
@@ -125,6 +112,7 @@ TODO: melhorar a seção educação
     display: flex;
     flex-direction: column;
     padding-bottom: 2.5vh;
+    gap: 2.5vh;
 }
 
 .curriculo__sobre__topico {
@@ -166,28 +154,27 @@ TODO: melhorar a seção educação
     font-weight: 600;
 }
 
-.curriculo__secao-esquerda, 
-.curriculo__secao-direita {
+.curriculo__box-esquerdo, 
+.curriculo__box-direito {
     padding: 3vh;
     border-style: solid;
     border-color: var(--cor-borda);
     box-sizing: border-box;
 }
 
-.apresentacao__texto, 
+.educacao__ensino-um__box-esquerdo, 
+.educacao__ensino-um__box-direito {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.apresentacao__conteudo__texto, 
 .curriculo__experiencia__texto, 
 .curriculo__educacao__ensino-um {
     padding-left: 1vh;
-}
-
-.curriculo__experiencia, 
-.curriculo__educacao, 
-.curriculo__extracurriculares, 
-.curriculo__hobbies, 
-.curriculo__sobre, 
-.curriculo__habilidades, 
-.curriculo__idiomas {
-    gap: 2.5vh;
 }
 
 .curriculo__experiencia, 
@@ -199,6 +186,7 @@ TODO: melhorar a seção educação
     display: flex;
     flex-direction: column;
     padding: 2vh 0;
+    gap: 2.5vh;
 }
 
 .curriculo__experiencia__titulo, 
@@ -215,7 +203,7 @@ TODO: melhorar a seção educação
 .curriculo__experiencia__texto, 
 .curriculo__educacao, 
 .curriculo__educacao__ensino-um, 
-.extracurriculares__conteudo, 
+.curriculo__extracurriculares__topico, 
 .curriculo__hobbies__texto, 
 .curriculo__sobre__topico, 
 .curriculo__habilidades__lista, 
@@ -224,7 +212,7 @@ TODO: melhorar a seção educação
     font-size: 1.2rem;
 }
 
-.extracurriculares__conteudo, 
+.curriculo__extracurriculares__topico, 
 .curriculo__hobbies__texto {
     padding-left: 4vh;
 }
@@ -252,16 +240,16 @@ TODO: melhorar a seção educação
         flex-direction: column;
     }
 
-    .curriculo__secao-esquerda {
+    .curriculo__box-esquerdo {
         border-width: 4px 4px 0 4px;
     }
 
-    .curriculo__secao-direita {
+    .curriculo__box-direito {
         border-width: 0 4px 4px 4px;
     }
 
-    .curriculo__secao-esquerda,
-    .curriculo__secao-direita {
+    .curriculo__box-esquerdo,
+    .curriculo__box-direito {
         width: 100%;
     }
 
@@ -280,14 +268,14 @@ TODO: melhorar a seção educação
     .curriculo {
         padding: 10vh;
     }
-
-    .curriculo__secao-esquerda,
-    .curriculo__secao-direita {
-        padding: 5vh;
-    }
-
+    
     .rodape {
         padding: 3vh 10vh;
+    }
+
+    .curriculo__box-esquerdo,
+    .curriculo__box-direito {
+        padding: 5vh;
     }
 }
 
@@ -313,20 +301,20 @@ TODO: melhorar a seção educação
     .apresentacao__imagem {
         width: auto;
     }
-
-    .educacao__ensino-um__bloco-esquerdo, 
-    .educacao__ensino-um__bloco-direito {
-        justify-content: space-around;
-    }
-
+    
     .curriculo__experiencia__texto {
         width: 100%;
     }
 
-    .apresentacao__texto, 
+    .educacao__ensino-um__box-esquerdo, 
+    .educacao__ensino-um__box-direito {
+        justify-content: space-around;
+    }
+
+    .apresentacao__conteudo__texto, 
     .curriculo__experiencia__texto, 
     .curriculo__educacao__ensino-um,
-    .extracurriculares__conteudo, 
+    .curriculo__extracurriculares__topico, 
     .curriculo__hobbies__texto,
     .curriculo__sobre__topico,
     .curriculo__habilidades__lista,
@@ -343,30 +331,30 @@ TODO: melhorar a seção educação
     .curriculo {
         padding: 3vh;
     }
+    
+    .apresentacao__conteudo__titulo {
+        font-size: 1.2rem;
+    }
+    
+    .apresentacao__conteudo__subtitulo {
+        font-size: 1rem;
+    }
+    
+    .apresentacao__conteudo__texto {
+        font-size: 0.9rem;
+    }
+    
+    .apresentacao__imagem {
+        width: 40%;
+    }
 
     .curriculo__apresentacao,
     .curriculo__sobre {
         padding: 2vh 0;
     }
-    
-    .apresentacao__titulo {
-        font-size: 1.2rem;
-    }
-    
-    .apresentacao__subtitulo {
-        font-size: 1rem;
-    }
-    
-    .apresentacao__texto {
-        font-size: 0.9rem;
-    }
 
-    .apresentacao__imagem {
-        width: 40%;
-    }
-
-    .curriculo__secao-esquerda,
-    .curriculo__secao-direita {
+    .curriculo__box-esquerdo,
+    .curriculo__box-direito {
        padding: 3vh; 
     }
     
@@ -383,7 +371,7 @@ TODO: melhorar a seção educação
     .curriculo__experiencia__texto, 
     .curriculo__educacao, 
     .curriculo__educacao__ensino-um, 
-    .extracurriculares__conteudo, 
+    .curriculo__extracurriculares__topico, 
     .curriculo__hobbies__texto, 
     .curriculo__sobre__topico, 
     .curriculo__habilidades__lista, 
@@ -397,8 +385,8 @@ TODO: melhorar a seção educação
 }
 
 @media (max-width: 400px) {
-    .curriculo__secao-esquerda,
-    .curriculo__secao-direita {
+    .curriculo__box-esquerdo,
+    .curriculo__box-direito {
        padding: 1.5vh; 
     }
 }

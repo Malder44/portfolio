@@ -24,7 +24,7 @@
     font-family: var(--font-texto);
 }
 
-.titulo-destaque, .texto-destaque:hover {
+.apresentacao__conteudo__titulo-destaque, .apresentacao__conteudo__texto-destaque:hover {
     color: var(--cor-texto-destaque);
 }
 
