@@ -6,8 +6,11 @@ Este projeto é um portfolio de Leonorico Borges, inicialmente desenvolvido com 
 O portfolio conta com três páginas sendo essas:
 
 1. Página principal
+!<assets/index.png>
 2. Página com informações sobre o autor
+!<assets/about.png>
 3. Página de apresentação de currículo
+!<assets/curriculum.png>
 
 As duas primeiras páginas e suas folhas de estilo foram desenvolvidas com apoio dos cursos de HTML e CSS da Alura. Posteriormente, melhorias foram feitas para que o código ficasse responsivo, otimizado e organizado, além de estarem com um estilo escolhido pelo próprio autor.
 
