@@ -1,3 +1,5 @@
+/*Seguindo o modelo SMACSS, este documento CSS é o documento CSS de categoria "base", ou seja, usado em todas as páginas do projeto.*/
+
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
 
 :root {
@@ -12,6 +14,8 @@
     --font-titulo: 'Krona One', sans-serif;
 }
 
+/* ESTILIZACAO GERAL PARA TODAS AS PAGINAS */
+
 * {
     margin: 0;
     padding: 0;
@@ -21,6 +25,8 @@ body {
     box-sizing: border-box;
     background-color: var(--cor-fundo-principal);
 }
+
+/* HEADER */
 
 .cabecalho {
     padding: 6vh 30vh;
@@ -41,6 +47,8 @@ body {
     color: var(--cor-texto-destaque);
 }
 
+/* FOOTER */
+
 .rodape {
     background-color: var(--cor-fundo-secundaria);
     padding: 3vh 30vh;
@@ -48,12 +56,18 @@ body {
     font-weight: 400;
 }
 
+/* ---BLOCO DE SELETORES - INICIO--- */
+
 .cabecalho__menu__link,
 .rodape {
     font-family: var(--font-texto);
     font-size: 1.5rem;
     color: var(--cor-texto-secundario);
 }
+
+/* ---BLOCO DE SELETORES - FIM--- */
+
+/* RESPONSIVO */
 
 @media (min-width: 2000px) {
     .cabecalho {

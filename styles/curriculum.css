@@ -1,3 +1,5 @@
+/*Seguindo o modelo SMACSS, este documento CSS é o documento CSS de categoria "layout", ou seja, usado apenas nesta página do projeto.*/
+
 :root {
     --cor-texto-curriculo-esquerda: #2F2F2F;
     --cor-texto-curriculo-direita: #202020;
@@ -7,18 +9,22 @@
     --cor-texto-curriculo-links-hover: #DAA520;
 }
 
+/* MAIN CLASS */
 .curriculo {
     padding: 10vh 30vh;
     display: flex;
     box-sizing: border-box;
 }
 
+/* SECAO ESQUERDA DO CURRICULO */
 .curriculo > .box-esquerdo {
     color: var(--cor-texto-curriculo-esquerda);
     width: 70%;
     border-width: 4px 0 4px 4px;
     background-color: var(--cor-fundo-curriculo-esquerda);
 }
+
+/* APRESENTACAO SECTION */
 
 .curriculo__apresentacao {
     display: flex;
@@ -55,6 +61,7 @@
     border-radius: 160px;
 }
 
+/* Classe que separa as sections */
 .separa-secao {
     margin: 1vh 0;
     border-width: 0;
@@ -62,9 +69,13 @@
     background-color: #00000048;
 }
 
+/* EXPERIENCIA SECTION */
+
 .curriculo__experiencia__texto {
     width: 70%;
 }
+
+/* EDUCACAO SECTION */
 
 .curriculo__educacao__ensino-um {
     display: flex;
@@ -85,6 +96,8 @@
     border-left: 2px solid var(--cor-borda);
 }
 
+/* EXTRACURRICULARES SECTION */
+
 .curriculo__extracurriculares__topico {
     display: flex;
     flex-direction: column;
@@ -101,12 +114,15 @@
     font-weight: 600;
 }
 
+/* SECAO DIREITA DO CURRICULO */
 .curriculo > .box-direito {
     color: var(--cor-texto-curriculo-direita);
     background-color: var(--cor-fundo-curriculo-direita);
     width: 30%;
     border-width: 4px 4px 4px 0;
 }
+
+/* SOBRE SECTION */
 
 .curriculo__sobre {
     display: flex;
@@ -131,6 +147,8 @@
     font-weight: 600;
 }
 
+/* HABILIDADES SECTION */
+
 .curriculo__habilidades__lista {
     display: flex;
     flex-direction: column;
@@ -143,6 +161,8 @@
     left: -0.7vh;
 }
 
+/* IDIOMAS SECTION */
+
 .curriculo__idiomas__topico {
     display: flex;
     flex-direction: column;
@@ -154,20 +174,13 @@
     font-weight: 600;
 }
 
+/* ---BLOCO DE SELETORES - INICIO--- */
+
 .curriculo > .box-esquerdo, 
 .curriculo > .box-direito {
     padding: 3vh;
     border-style: solid;
     border-color: var(--cor-borda);
-    box-sizing: border-box;
-}
-
-.curriculo__educacao__ensino-um > .box-esquerdo, 
-.curriculo__educacao__ensino-um > .box-direito {
-    display: flex;
-    flex-direction: column;
-    gap: 1vh;
-    width: 50%;
     box-sizing: border-box;
 }
 
@@ -212,10 +225,23 @@
     font-size: 1.2rem;
 }
 
+.curriculo__educacao__ensino-um > .box-esquerdo, 
+.curriculo__educacao__ensino-um > .box-direito {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    width: 50%;
+    box-sizing: border-box;
+}
+
 .curriculo__extracurriculares__topico, 
 .curriculo__hobbies__texto {
     padding-left: 4vh;
 }
+
+/* ---BLOCO DE SELETORES - FIM--- */
+
+/* RESPONSIVO */
 
 @media (max-width: 1400px) {
     .cabecalho {
@@ -261,16 +287,13 @@
 }
 
 @media (max-width: 1000px) {
-    .cabecalho {
-        padding: 10vh;
-    }
-
-    .curriculo {
-        padding: 10vh;
-    }
-    
     .rodape {
         padding: 3vh 10vh;
+    }
+
+    .cabecalho,
+    .curriculo {
+        padding: 10vh;
     }
 
     .curriculo > .box-esquerdo,
@@ -282,11 +305,6 @@
 @media (max-width: 800px) {
     .cabecalho__menu {
         justify-content: center;
-        text-align: center;
-    }
-
-    .curriculo {
-        text-align: center;
     }
 
     .curriculo__apresentacao {
@@ -294,23 +312,20 @@
         align-items: center;
     }
 
-    .curriculo__apresentacao__conteudo {
-        width: 100%;
-    }
-
     .curriculo__apresentacao__imagem {
         width: auto;
     }
-    
+
+    .cabecalho__menu,
+    .curriculo {
+        text-align: center;
+    }
+
+    .curriculo__apresentacao__conteudo,
     .curriculo__experiencia__texto {
         width: 100%;
     }
-
-    .curriculo__educacao__ensino-um > .box-esquerdo, 
-    .curriculo__educacao__ensino-um > .box-direito {
-        justify-content: space-around;
-    }
-
+    
     .curriculo__apresentacao__texto, 
     .curriculo__experiencia__texto, 
     .curriculo__educacao__ensino-um,
@@ -321,17 +336,14 @@
     .curriculo__idiomas__topico {
         padding-left: 0;
     }
+
+    .curriculo__educacao__ensino-um > .box-esquerdo, 
+    .curriculo__educacao__ensino-um > .box-direito {
+        justify-content: space-around;
+    }
 }
 
-@media (max-width: 600px) {
-    .cabecalho {
-        padding: 3vh;
-    }
-
-    .curriculo {
-        padding: 3vh;
-    }
-    
+@media (max-width: 600px) { 
     .curriculo__apresentacao__titulo {
         font-size: 1.2rem;
     }
@@ -348,14 +360,20 @@
         width: 40%;
     }
 
+    .cabecalho,
+    .curriculo,
+    .rodape {
+        padding: 3vh;
+    }
+    
+    .curriculo > .box-esquerdo,
+    .curriculo > .box-direito {
+        padding: 3vh; 
+    }
+    
     .curriculo__apresentacao,
     .curriculo__sobre {
         padding: 2vh 0;
-    }
-
-    .curriculo > .box-esquerdo,
-    .curriculo > .box-direito {
-       padding: 3vh; 
     }
     
     .curriculo__experiencia__titulo, 
@@ -377,10 +395,6 @@
     .curriculo__habilidades__lista, 
     .curriculo__idiomas__topico {
         font-size: 0.9rem;
-    }
-
-    .rodape {
-        padding: 3vh;
     }
 }
 

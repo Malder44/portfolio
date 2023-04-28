@@ -1,17 +1,18 @@
+/*Seguindo o modelo SMACSS, este documento CSS é o documento CSS "module", ou seja, usado em algumas páginas do projeto (index.html e about.html).*/
+
+/* MAIN CLASS */
 .apresentacao {
     padding: 8vh 30vh;
-    display: flex;
     align-items: center;
     justify-content: space-between;
     color: var(--cor-texto-principal);
-    gap: 4vh;
 }
+
+/* CONTEUDO SECTION */
 
 .apresentacao__conteudo {
     width: 50%;
-    display: flex;
     flex-direction: column;
-    gap: 4vh;
 }
 
 .apresentacao__titulo {
@@ -20,7 +21,6 @@
 }
 
 .apresentacao__texto {
-    font-size: 1.5rem;
     font-family: var(--font-texto);
 }
 
@@ -29,16 +29,13 @@
 }
 
 .apresentacao__links {
-    display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 3.5vh;
 }
 
 .apresentacao__links__subtitulo {
     font-family: var(--font-titulo);
     font-weight: 400;
-    font-size: 1.5rem;
 }
 
 .apresentacao__links__navegacao {
@@ -52,7 +49,6 @@
     border-radius: 8px;
     color: var(--cor-texto-secundario);
     text-decoration: none;
-    font-size: 1.5rem;
     font-family: var(--font-texto);
     font-weight: 600;
 }
@@ -61,11 +57,31 @@
     background-color: var(--cor-fundo-secundaria);
 }
 
+/* IMAGEM */
 .apresentacao__imagem {
     width: 50%;
     border-radius: 24px;
     box-shadow: 10px -10px 14px #9E511290;
 }
+
+/* ---BLOCO DE SELETORES - INICIO--- */
+
+.apresentacao,
+.apresentacao__conteudo,
+.apresentacao__links {
+    display: flex;
+    gap: 4vh;
+}
+
+.apresentacao__texto,
+.apresentacao__links__subtitulo,
+.apresentacao__links__navegacao {
+    font-size: 1.5rem;
+}
+
+/* ---BLOCO DE SELETORES - FIM--- */
+
+/* RESPONSIVO */
 
 @media (min-width: 2000px) {
     .apresentacao {
@@ -77,13 +93,13 @@
         font-size: 3.75rem;
     }
     
-    .apresentacao__texto,
-    .apresentacao__links__subtitulo {
-        font-size: 3rem;
-    }
-
     .apresentacao__links__navegacao {
         padding: 40px;
+    }
+    
+    .apresentacao__texto,
+    .apresentacao__links__subtitulo,
+    .apresentacao__links__navegacao {
         font-size: 3rem;
     }
 }
@@ -118,14 +134,14 @@
     .apresentacao__titulo {
         font-size: 1.5rem;
     }
-    
-    .apresentacao__texto,
-    .apresentacao__links__subtitulo {
-        font-size: 1rem;
-    }
 
     .apresentacao__links__navegacao {
         padding: 15px;
+    }
+    
+    .apresentacao__texto,
+    .apresentacao__links__subtitulo,
+    .apresentacao__links__navegacao {
         font-size: 1rem;
     }
 }
