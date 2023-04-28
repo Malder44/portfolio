@@ -137,6 +137,10 @@
     gap: 1.3vh;
 }
 
+.sobre__topico__email {
+    word-wrap: break-word;
+}
+
 .sobre__topico__links {
     text-decoration: none;
     color: var(--cor-texto-curriculo-links);
