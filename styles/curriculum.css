@@ -137,10 +137,6 @@
     gap: 1.3vh;
 }
 
-.sobre__topico__email {
-    word-wrap: break-word;
-}
-
 .sobre__topico__links {
     text-decoration: none;
     color: var(--cor-texto-curriculo-links);
@@ -236,6 +232,11 @@
     gap: 1vh;
     width: 50%;
     box-sizing: border-box;
+}
+
+.curriculo__extracurriculares__titulo,
+.sobre__topico__email {
+    word-wrap: break-word;
 }
 
 .curriculo__extracurriculares__topico, 
